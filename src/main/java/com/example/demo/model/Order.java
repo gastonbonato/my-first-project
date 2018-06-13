@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 import java.util.ArrayList;
 
 public class Order {
@@ -8,6 +8,11 @@ public class Order {
     private ArrayList<Items> itemsList = new ArrayList<Items>();
 
     /*Constructor*/
+    public Order(int id,ArrayList<Items> itemsList  ){
+        this.id = id;
+        this.itemsList = itemsList;
+    }
+
     public Order(int id){
         this.id = id;
     }
@@ -32,10 +37,6 @@ public class Order {
 
     public void setItemsList(ArrayList<Items> itemsList){
         this.itemsList = itemsList;
-    }
-
-    public void AddItem( Items i ){
-        this.itemsList.add(i);
     }
 
     public String toString(){

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 import java.util.ArrayList;
 
 public class Payment {
@@ -9,6 +9,12 @@ public class Payment {
     private double amount;
 
     /*Constructor*/
+    public Payment(int id, double amount, ArrayList<Order> orderList  ){
+        this.id = id;
+        this.amount = amount;
+        this.orderList = orderList;
+    }
+
     public Payment(int id, double amount ){
         this.id = id;
         this.amount = amount;
@@ -33,10 +39,6 @@ public class Payment {
 
     public void setOrderList(ArrayList<Order> orderList ){
         this.orderList = orderList;
-    }
-
-    public void addOrder( Order o ){
-        this.orderList.add(o);
     }
 
     public double getAmount(){
