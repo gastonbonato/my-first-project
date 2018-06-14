@@ -1,13 +1,18 @@
-package com.example.demo;
+package com.example.demo.model;
 import java.util.ArrayList;
 
 public class Order {
 
     /*Atributes*/
     private int id;
-    private ArrayList<Items> itemsList = new ArrayList<Items>();
+    private ArrayList<Item> itemList = new ArrayList<Item>();
 
     /*Constructor*/
+    public Order(int id,ArrayList<Item> itemList){
+        this.id = id;
+        this.itemList = itemList;
+    }
+
     public Order(int id){
         this.id = id;
     }
@@ -26,23 +31,19 @@ public class Order {
         this.id = id;
     }
 
-    public ArrayList<Items> getItemsList(){
-        return itemsList;
+    public ArrayList<Item> getItemList(){
+        return itemList;
     }
 
-    public void setItemsList(ArrayList<Items> itemsList){
-        this.itemsList = itemsList;
-    }
-
-    public void AddItem( Items i ){
-        this.itemsList.add(i);
+    public void setItemList(ArrayList<Item> itemList){
+        this.itemList = itemList;
     }
 
     public String toString(){
         String aux = "";
         aux += "Id Order:" + id + " Items: ";
 
-        for(Items counter: itemsList) {
+        for(Item counter: itemList) {
             aux += "Id: "+ counter.getId() + " ";
             aux += "Name: " + counter.getName() + " ";
         }
