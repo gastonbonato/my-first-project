@@ -5,7 +5,7 @@ public class Payment {
 
     /*Attributes*/
     private int id;
-    private ArrayList<Order> orderList = new ArrayList<Order>();
+    private ArrayList<Order> orderList = new ArrayList<>();
     private double amount;
 
     /*Constructor*/

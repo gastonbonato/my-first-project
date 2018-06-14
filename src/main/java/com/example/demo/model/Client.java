@@ -9,7 +9,7 @@ public class Client {
     private String name;
     private String lastName;
     private String description;
-    private ArrayList<Payment> paymentList = new ArrayList<Payment>();
+    private ArrayList<Payment> paymentList = new ArrayList<>();
 
     public Client(int id, String name, String lastName, String description, ArrayList<Payment> paymentList)
     {
