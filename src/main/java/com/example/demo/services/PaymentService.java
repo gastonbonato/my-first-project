@@ -36,14 +36,14 @@ public class PaymentService implements Service<Payment> {
 
     @Override
     public void delete(int id) {
-        //indexAux save index for deleting later, -1 if object does not exist.
-        int indexAux = -1;
-        for(int index = 0 ; index < paymentArr.size(); index++) {
-            if(paymentArr.get(index).getId() == id) {
-                indexAux = index;
+            //indexAux save index for deleting later, -1 if object does not exist.
+            int indexAux = -1;
+            for(int index = 0 ; index < paymentArr.size(); index++) {
+                if(paymentArr.get(index).getId() == id) {
+                    indexAux = index;
+                }
             }
-        }
-        //TODO: CUIDADO! si indexAux es = -1 va a saltar ArrayIndexOutOfBoundsException
-        paymentArr.remove(indexAux);
+            //TODO: CUIDADO! si indexAux es = -1 va a saltar ArrayIndexOutOfBoundsException
+            paymentArr.remove(indexAux);
     }
 }
