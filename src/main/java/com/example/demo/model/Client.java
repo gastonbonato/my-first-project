@@ -28,9 +28,11 @@ public class Client {
         this.description = description;
     }
 
-    public Client()
+    public Client(String name, String lastName, String description)
     {
-        //default
+        this.name = name;
+        this.lastName = lastName;
+        this.description = description;
     }
 
     public int getId() {
@@ -75,12 +77,13 @@ public class Client {
 
     public String toString() {
         String aux = "";
-        aux += "Id Client: " + id + " Name: " + name + " Lastname: " + lastName + " Description: " + description + " Payments: ";
+        aux += "Id Client: " + this.id + " Name: " + this.name + " Lastname: " + this.lastName + " Description: " + this.description + " Payments: ";
 
         for (Payment counter : paymentList) {
-            aux += paymentList.toString();
+            aux += this.paymentList.toString();
         }
 
         return aux;
     }
 }
+
