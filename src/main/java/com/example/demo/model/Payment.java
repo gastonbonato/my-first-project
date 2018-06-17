@@ -20,8 +20,9 @@ public class Payment {
         this.amount = amount;
     }
 
-    public Payment(){
+    public Payment(double amount){
         //default constructor
+        this.amount = amount;
     }
 
     /*Methods*/

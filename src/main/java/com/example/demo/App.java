@@ -23,7 +23,8 @@ public class App {
     public static void main( String[] args ) {
         
         //Agregar MENU
-        
+
+        /*
         Item item1 = new Item(335, "Monitor");
         Item item2 = new Item(336, "Parlante");
 
@@ -57,7 +58,7 @@ public class App {
         System.out.println(paymentService.read(pay2.getId()).toString());
         System.out.println(paymentService.read(pay1.getId()).toString());
         paymentService.delete(pay2.getId());
-        System.out.print(paymentService.read(pay2.getId()));
+        System.out.print(paymentService.read(pay2.getId()));*/
     }
 
 }

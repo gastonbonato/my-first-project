@@ -1051,7 +1051,6 @@
     <column id="255" parent="232" name="idOrder_fk">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="256" parent="232" name="fk_Payments_orders">

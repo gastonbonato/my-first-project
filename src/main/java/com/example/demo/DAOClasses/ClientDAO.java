@@ -16,8 +16,6 @@ public class ClientDAO implements DAOInterface<Client> {
     private static final String SQL_UPDATE = "UPDATE client SET firstName = ?, lastName = ?, description = ? WHERE idClient = ?";
     private static final String SQL_DELETE = "DELETE FROM client WHERE idClient = ?";
 
-
-
     private static final conectionDB conn = conectionDB.getDbCon();
 
     @Override

@@ -12,8 +12,9 @@ public class Item {
         this.name = name;
     }
 
-    public Item(){
+    public Item(String name){
         //default constructor
+        this.name = name;
     }
 
     /*Methods*/
