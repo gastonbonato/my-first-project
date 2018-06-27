@@ -1,24 +1,25 @@
-package com.example.demo;
+package com.example.demo.model;
 
-public class Items {
+public class Item {
 
     /*Atributes*/
     private int id;
     private String name;
 
     /*Constructor*/
-    public Items(int id, String name) {
+    public Item(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Items(){
+    public Item(String name){
         //default constructor
+        this.name = name;
     }
 
     /*Methods*/
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id){
@@ -26,7 +27,7 @@ public class Items {
     }
 
     public String getName(){
-        return name;
+        return this.name;
     }
 
     public void setName(String name){
