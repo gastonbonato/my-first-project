@@ -2,8 +2,8 @@ package com.example.demo.services;
 
 import com.example.demo.model.Client;
 
-
 import java.util.ArrayList;
+
 
 public class ClientService implements Service<Client> {
     private ArrayList<Client> clientsArr = new ArrayList<>();
@@ -46,8 +46,10 @@ public class ClientService implements Service<Client> {
 
            }
        }
-        //TODO: CUIDADO! si indexAux es = -1 va a saltar ArrayIndexOutOfBoundsException
-        clientsArr.remove(indexAux);
+
+       if(indexAux != -1){ clientsArr.remove(indexAux); }
+       else { System.out.println("Client not found or was already deleted."); }
+
     }
 
     public String toString()
